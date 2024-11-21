@@ -1,0 +1,358 @@
+.bg-blue {
+  background-color: lightblue;
+}
+
+.bg-red {
+  background-color: lightcoral;
+}
+
+body,
+button {
+  font-size: 20px;
+  font-family: TS-Reg, sans-serif;
+}
+
+/* STRUCTURE */
+
+header {
+  height: 60px;
+  padding: 10px 0;
+  position: sticky;
+  top: 0;
+  z-index: 1;
+  background-color: white;
+  border-bottom: 1px solid lightgray;
+}
+
+header > div {
+  display: flex;
+  justify-content: space-between;
+}
+
+main {
+  margin-top: 24px;
+}
+
+footer {
+  background-color: lightgreen;
+  margin-top: 30px;
+}
+
+i {
+  font-size: 18px;
+}
+
+/* ———————————— COMMON CLASSES ———————————— */
+.container {
+  width: 1096px;
+  margin-left: auto;
+  margin-right: auto;
+}
+
+/* ———————————— COMMON ELEMENTS ———————————— */
+
+/* ———————————— HEADER ———————————— */
+
+.logo img {
+  width: 190px;
+}
+
+nav.navigation-bar {
+  display: flex;
+  align-items: center;
+  font-family: "TS-Reg";
+  font-size: 16px;
+  font-weight: bold;
+  display: flex;
+  /* width: 50%; */
+  gap: 10px;
+}
+
+.nav-button {
+  display: flex;
+  justify-content: space-evenly;
+  align-items: center;
+  padding: 8px 10px;
+  border-radius: 30px;
+  gap: 5px;
+  align-self: stretch;
+  /* border: 1px solid black; */
+}
+.nav-button:hover {
+  background-color: #f2f2f2;
+  cursor: pointer;
+}
+
+.connection-button {
+  font-family: "TS-Reg";
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  padding: 8px 16px;
+  border-radius: 20px;
+  height: 40px;
+  color: white;
+  background-color: black;
+  text-wrap: nowrap;
+}
+
+.connection-button:hover {
+  background-color: #4c4c4c;
+  cursor: pointer;
+}
+
+.connection-button button {
+  font: inherit;
+  color: inherit;
+  background-color: inherit;
+  border: 0px;
+  cursor: inherit;
+}
+
+/* ———————————— BODY ———————————— */
+
+/* ———————————— SECTTION TOP ———————————— */
+
+/* h1 {
+  font-size: 28px;
+  font-family: "TS-Med";
+  font-weight: 900;
+  line-height: 38px;
+  letter-spacing: 0.6px;
+} */
+
+.top {
+  /* background: pink; */
+}
+
+.top h1 {
+  font-family: "TS-Med";
+  font-weight: 900;
+  font-size: 54px;
+  line-height: 70px;
+  letter-spacing: 0.5px;
+}
+
+p.disclaimer {
+  font-size: 14px;
+  line-height: 16px;
+}
+
+/* GROUPER TOUT CE QUI EST LINK SOUS <A> */
+
+.top a:link,
+a:visited,
+a:hover,
+a:active {
+  color: #000000;
+}
+
+span.explorez {
+  color: #ff5d5d;
+}
+
+/* SECTION SERVICES */
+section.services {
+  /* background: green; */
+  display: flex;
+  justify-content: space-between;
+  gap: 10px;
+  margin-top: 30px;
+}
+
+section.services > .service-button {
+  border: 1px solid black;
+  border-radius: 10px;
+  height: 70px;
+  flex: 1;
+  display: flex;
+  justify-content: space-between;
+  padding: 16px;
+}
+
+section.services div.service-text {
+  font-family: "TS-Med";
+  text-align: left;
+  font-size: 16px;
+  line-height: 20px;
+}
+
+section.services div.service-icon {
+  text-align: left;
+  font-size: 16px;
+}
+
+.service-button:hover {
+  background-color: black;
+  color: white;
+  cursor: pointer;
+}
+
+/* SECTTION GALLERY */
+
+section.gallery {
+  /* background: green; */
+  margin-top: 25px;
+  display: flex;
+  gap: 2px;
+  height: 430px;
+}
+
+section.gallery img {
+  object-fit: cover;
+  object-position: center;
+  width: 100%;
+  height: 100%;
+}
+
+section.gallery img:hover {
+  opacity: 0.8;
+  cursor: pointer;
+}
+
+section.gallery > div.gallery-col-1 {
+  flex: 1.25;
+  position: relative;
+  /* display: flex; */
+  /* align-items: flex-end; */
+}
+
+section.gallery div.all-photos {
+  position: absolute;
+  bottom: 0;
+  font-family: TS-med;
+  font-size: 12px;
+  line-height: 20px;
+  color: #ffffff;
+  background-color: #000000;
+  padding: 8px;
+  border-radius: 30px;
+  display: flex;
+  gap: 8px;
+  margin: 15px;
+}
+
+section.gallery div.all-photos:hover {
+  background-color: #333;
+  cursor: pointer;
+}
+
+section.gallery > div.gallery-col-2 {
+  flex: 1;
+  gap: 2px;
+  display: flex;
+  flex-direction: column;
+}
+
+section.gallery > div.gallery-col-2 > div {
+  flex: 1;
+}
+
+section.gallery div.gallery-col-2 > div:hover {
+  opacity: 0.8;
+  cursor: pointer;
+}
+
+.gallery-col-2 img {
+  /* border: 20px solid red; */
+}
+
+/* SECTTION MENU */
+section.menu > div {
+  font-size: 12px;
+  margin: 20px 0;
+  display: flex;
+  justify-content: space-between;
+  gap: 5px;
+}
+
+section.menu span.link:hover {
+  text-decoration: underline;
+  cursor: pointer;
+}
+
+section.menu span:not(:first-child) {
+  margin: 0 5px;
+}
+
+section.menu i.smaller {
+  font-size: 11px;
+}
+
+section.menu i.arrow {
+  /* font-size: 11px; */
+}
+
+/* SECTION ABSTRACT */
+section.abstract {
+  margin: 56px 0 0 0;
+  display: flex;
+  justify-content: space-between;
+}
+
+section.abstract h2 {
+  margin-bottom: 45px;
+}
+
+section.abstract p {
+  font-family: Georgia, "Times New Roman", Times, serif;
+  font-size: 20px;
+  line-height: 24px;
+  color: #333;
+}
+
+section.abstract > div:nth-child(1) {
+  flex: 6;
+}
+
+section.abstract > div:nth-child(2) {
+  flex: 4;
+}
+
+div.abstract-col-2 {
+  display: flex;
+  flex-direction: column;
+}
+
+div.organize {
+  padding: 32px 33px;
+  background-color: #ff5d5d;
+  border-radius: 16px 16px 0 0;
+}
+
+div.organize > p:first-child {
+  font-family: TS-Med;
+  font-size: 32px;
+  line-height: 40px;
+  margin-bottom: 20px;
+}
+
+div.organize > p:nth-child(2) {
+  font-family: TS-Reg;
+  font-size: 16px;
+  line-height: 20px;
+  margin-bottom: 24px;
+}
+
+div.organize button {
+  font-family: TS-med;
+  font-size: 16px;
+  line-height: 20px;
+  color: white;
+  background-color: black;
+  border: 0;
+  border-radius: 14px;
+  padding: 12px;
+}
+
+div.organize button:hover {
+  background-color: #000000b2;
+}
+
+div.mini-map {
+  background-image: url(../img/image_trips_card_medium.png);
+  background-position: center;
+  background-size: cover;
+  height: 190px;
+  border-radius: 0 0 16px 16px;
+}
