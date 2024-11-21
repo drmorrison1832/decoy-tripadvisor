@@ -239,6 +239,7 @@ section.gallery div.all-photos:hover {
 
 section.gallery > div.gallery-col-2 {
   flex: 1;
+  overflow: hidden;
   gap: 2px;
   display: flex;
   flex-direction: column;
@@ -254,7 +255,6 @@ section.gallery div.gallery-col-2 > div:hover {
 }
 
 .gallery-col-2 img {
-  /* border: 20px solid red; */
 }
 
 /* SECTTION MENU */
