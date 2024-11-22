@@ -6,6 +6,10 @@
   background-color: lightcoral;
 }
 
+.bd-black {
+  border: 1px dotted black;
+}
+
 body,
 button {
   font-size: 20px;
@@ -35,7 +39,7 @@ main {
 
 footer {
   background-color: lightgreen;
-  margin-top: 30px;
+  margin-top: 430px;
 }
 
 i {
@@ -151,7 +155,7 @@ span.explorez {
   color: #ff5d5d;
 }
 
-/* SECTION SERVICES */
+/* ———————————— SECTION SERVICES ———————————— */
 section.services {
   /* background: green; */
   display: flex;
@@ -188,7 +192,7 @@ section.services div.service-icon {
   cursor: pointer;
 }
 
-/* SECTTION GALLERY */
+/* ———————————— SECTTION GALLERY ———————————— */
 
 section.gallery {
   /* background: green; */
@@ -198,23 +202,9 @@ section.gallery {
   height: 430px;
 }
 
-section.gallery img {
-  object-fit: cover;
-  object-position: center;
-  width: 100%;
-  height: 100%;
-}
-
-section.gallery img:hover {
-  opacity: 0.8;
-  cursor: pointer;
-}
-
-section.gallery > div.gallery-col-1 {
+.gallery-col-1 {
   flex: 1.25;
   position: relative;
-  /* display: flex; */
-  /* align-items: flex-end; */
 }
 
 section.gallery div.all-photos {
@@ -237,30 +227,39 @@ section.gallery div.all-photos:hover {
   cursor: pointer;
 }
 
-section.gallery > div.gallery-col-2 {
+.gallery-col-2 {
   flex: 1;
-  overflow: hidden;
-  gap: 2px;
   display: flex;
+  gap: 2px;
   flex-direction: column;
+
+  overflow: hidden;
 }
 
-section.gallery > div.gallery-col-2 > div {
-  flex: 1;
+.gallery-col-1 img {
+  object-fit: cover;
+  object-position: center;
+  width: 100%;
+  height: 100%;
 }
 
-section.gallery div.gallery-col-2 > div:hover {
+.gallery-col-2 img {
+  object-fit: cover;
+  object-position: center;
+  height: 100%;
+  width: 100%;
+  /* height: calc(50% - 1px); */
+}
+
+section.gallery img:hover {
   opacity: 0.8;
   cursor: pointer;
 }
 
-.gallery-col-2 img {
-}
-
-/* SECTTION MENU */
+/* ———————————— SECTTION MENU ———————————— */
 section.menu > div {
   font-size: 12px;
-  margin: 20px 0;
+  margin-top: 20px;
   display: flex;
   justify-content: space-between;
   gap: 5px;
@@ -279,19 +278,36 @@ section.menu i.smaller {
   font-size: 11px;
 }
 
-section.menu i.arrow {
-  /* font-size: 11px; */
+section.menu i.arrow-smaller {
+  vertical-align: 2px;
+  font-size: 12px;
 }
 
-/* SECTION ABSTRACT */
+/* ———————————— SECTION ABSTRACT ———————————— */
 section.abstract {
-  margin: 56px 0 0 0;
+  margin: 40px 0 0 0;
   display: flex;
   justify-content: space-between;
 }
 
 section.abstract h2 {
+  font-size: 28px;
+  font-family: "TS-Med";
+  font-weight: 900;
+  line-height: 38px;
+  letter-spacing: 0.6px;
   margin-bottom: 45px;
+}
+
+section.abstract div.abstract-col-1 {
+  width: 50%;
+}
+
+section.abstract div.abstract-col-2 {
+  width: calc(50% - 120px);
+  margin-left: 120px;
+  display: flex;
+  flex-direction: column;
 }
 
 section.abstract p {
@@ -299,19 +315,6 @@ section.abstract p {
   font-size: 20px;
   line-height: 24px;
   color: #333;
-}
-
-section.abstract > div:nth-child(1) {
-  flex: 6;
-}
-
-section.abstract > div:nth-child(2) {
-  flex: 4;
-}
-
-div.abstract-col-2 {
-  display: flex;
-  flex-direction: column;
 }
 
 div.organize {
@@ -337,7 +340,7 @@ div.organize > p:nth-child(2) {
 div.organize button {
   font-family: TS-med;
   font-size: 16px;
-  line-height: 20px;
+  line-height: 30px;
   color: white;
   background-color: black;
   border: 0;
@@ -355,4 +358,24 @@ div.mini-map {
   background-size: cover;
   height: 190px;
   border-radius: 0 0 16px 16px;
+}
+
+/* ———————————— SECTION HIGHLIGHTS ————————————  */
+
+section.highlights {
+  border: 1px solid black;
+  margin-top: 50px;
+}
+
+div.diversion {
+  display: flex;
+  height: 296px;
+}
+
+.diversion-col-1 {
+  flex: 1.25;
+}
+
+.diversion-col-2 {
+  flex: 3;
 }
