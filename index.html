@@ -6,6 +6,7 @@
     <link rel="stylesheet" href="./assets/css/reset.css" />
     <link rel="stylesheet" href="./assets/css/styles.css" />
     <link rel="stylesheet" href="./assets/css/fonts.css" />
+    <link rel="stylesheet" href="./assets/css/icons.css" />
     <script
       src="https://kit.fontawesome.com/aa53174cf2.js"
       crossorigin="anonymous"
@@ -13,33 +14,31 @@
     <title>[Decoy] Tripadvisor</title>
   </head>
   <body>
-    <header>
-      <div class="container">
-        <span class="logo">
-          <img src="./assets/img/Tripadvisor_logo.svg" alt="Tripadvisor logo" />
-        </span>
-        <nav class="navigation-bar">
-          <div class="nav-button">
-            <i class="fa-solid fa-pencil"></i>
-            <div>Avis</div>
-          </div>
-          <div class="nav-button">
-            <i class="fa-regular fa-heart"></i>
-            <div>Voyages</div>
-          </div>
-          <div class="nav-button">
-            <i class="fa-regular fa-bell"></i>
-            <div>Alertes</div>
-          </div>
-          <div class="connection-button">
-            <button>Connectez-vous</button>
-          </div>
-          <div class="nav-button">
-            <i class="fa-solid fa-cart-shopping"></i>
-            <div>Panier</div>
-          </div>
-        </nav>
-      </div>
+    <header class="container">
+      <span class="logo">
+        <img src="./assets/img/Tripadvisor_logo.svg" alt="Tripadvisor logo" />
+      </span>
+      <nav class="navigation-bar">
+        <div class="nav-button">
+          <i class="icon-pencil"></i>
+          <div>Avis</div>
+        </div>
+        <div class="nav-button">
+          <i class="icon-heart"></i>
+          <div>Voyages</div>
+        </div>
+        <div class="nav-button">
+          <i class="icon-notification_bell"></i>
+          <div>Alertes</div>
+        </div>
+        <div class="connection-button">
+          <button>Connectez-vous</button>
+        </div>
+        <div class="nav-button">
+          <i class="icon-empty_cart"></i>
+          <div>Panier</div>
+        </div>
+      </nav>
     </header>
 
     <main class="container">
@@ -48,69 +47,72 @@
         <p class="disclaimer">
           Les revenus influencent le choix des expériences présentées sur cette
           page :
-          <a href="#" rel="noopener noreferrer">en savoir plus</a>.
+          <a rel="noopener noreferrer">en savoir plus</a>.
         </p>
-      </section>
-      <section class="services">
-        <div class="service-button">
-          <div class="service-text">Hôtels</div>
-          <div class="service-icon"><i class="fa-solid fa-bed"></i></div>
-        </div>
-        <div class="service-button">
-          <div class="service-text">Locations de vacances</div>
-          <div class="service-icon">
-            <i class="fa-solid fa-house-chimney"></i>
+
+        <div class="services">
+          <div class="service-button">
+            <div class="service-text">Hôtels</div>
+            <div class="service-icon"><i class="icon-hotels"></i></div>
+          </div>
+          <div class="service-button">
+            <div class="service-text">Locations de vacances</div>
+            <div class="service-icon">
+              <i class="icon-vacation_rentals"></i>
+            </div>
+          </div>
+          <div class="service-button">
+            <div class="service-text">Activités</div>
+            <div class="service-icon">
+              <i class="icon-attractions"></i>
+            </div>
+          </div>
+          <div class="service-button">
+            <div class="service-text">Restaurants</div>
+            <div class="service-icon"><i class="icon-restaurants"></i></div>
+          </div>
+          <div class="service-button">
+            <div class="service-text">Forums de voyage</div>
+            <div class="service-icon"><i class="icon-forums"></i></div>
+          </div>
+          <div class="service-button">
+            <div class="service-text">Plus</div>
+            <div class="service-icon"><i class="icon-more_horizontal"></i></div>
           </div>
         </div>
-        <div class="service-button">
-          <div class="service-text">Activités</div>
-          <div class="service-icon">
-            <i class="fa-solid fa-ticket-simple"></i>
+
+        <div class="gallery">
+          <div class="gallery-col-1">
+            <img src="./assets/img/view.jpg" alt="" />
+            <div class="all-photos">
+              <span><i class="icon-photo"></i> </span>
+              <span>Toutes les photos</span>
+            </div>
+          </div>
+          <div class="gallery-col-2">
+            <div><img src="./assets/img/caption-8.jpg" alt="" /></div>
+            <div><img src="./assets/img/caption-9.jpg" alt="" /></div>
           </div>
         </div>
-        <div class="service-button">
-          <div class="service-text">Restaurants</div>
-          <div class="service-icon"><i class="fa-solid fa-utensils"></i></div>
-        </div>
-        <div class="service-button">
-          <div class="service-text">Forums de voyage</div>
-          <div class="service-icon"><i class="fa-solid fa-message"></i></div>
-        </div>
-        <div class="service-button">
-          <div class="service-text">Plus</div>
-          <div class="service-icon"><i class="fa-solid fa-ellipsis"></i></div>
+
+        <div class="location">
+          <div>
+            <p>
+              <span class="link">Europe</span>
+              <i class="icon-single_chevron_right smaller"></i>
+              <span class="link">France</span>
+              <i class="icon-single_chevron_right smaller"></i>
+              <span class="link">Île-de-France</span>
+              <i class="icon-single_chevron_right smaller"></i>
+              <span class="link">Paris</span
+              ><span><i class="icon-caret_down"></i></span>
+            </p>
+            <p>Visister : Paris</p>
+          </div>
         </div>
       </section>
 
-      <section class="gallery">
-        <div class="gallery-col-1">
-          <img src="./assets/img/view.jpg" alt="" />
-          <div class="all-photos">
-            <span><i class="fa-regular fa-image"></i> </span>
-            <span>Toutes les photos</span>
-          </div>
-        </div>
-        <div class="gallery-col-2">
-          <img src="./assets/img/caption-8.jpg" alt="" />
-          <img src="./assets/img/caption-9.jpg" alt="" />
-        </div>
-      </section>
-      <section class="menu">
-        <div>
-          <p>
-            <span class="link">Europe</span>
-            <i class="fa-solid fa-chevron-right smaller"></i>
-            <span class="link">France</span>
-            <i class="fa-solid fa-chevron-right smaller"></i>
-            <span class="link">Île-de-France</span>
-            <i class="fa-solid fa-chevron-right smaller"></i>
-            <span class="link">Paris</span
-            ><span><i class="fa-solid fa-sort-down arrow-smaller"></i></span>
-          </p>
-          <p>Visister : Paris</p>
-        </div>
-      </section>
-      <section class="abstract">
+      <section class="container abstract">
         <div class="abstract-col-1">
           <h2>La Ville Lumière éblouit en tous points</h2>
           <p>
@@ -136,13 +138,343 @@
         </div>
       </section>
 
-      <section class="bd-black highlights"></section>
-      <h2 class="bd-black">Paris : les immanquables</h2>
-      <div class="bd-black diversion">
-        <div class="bd-black diversion-col-1">GAUCHE</div>
-        <div class="bd-black diversion-col-2">DROITE</div>
-      </div>
+      <section class="highlights">
+        <h2>Paris : les immanquables</h2>
+        <div class="activities">
+          <div class="activities-col-1">
+            <h3>Se divertir</h3>
+            <p>
+              Des lieux à voir, des rues à explorer et des expériences
+              emblématiques à Paris.
+            </p>
+            <p><a>Tout afficher</a></p>
+          </div>
+          <div class="carroussel">
+            <div class="diapo">
+              <div class="image">
+                <img src="./assets/img/eiffeltoren.jpg" alt="" />
+                <div class="like-button">
+                  <i class="icon-heart"></i>
+                </div>
+                <div class="travelers-choice">
+                  <div><i class="icon-travelers_choice_badge"></i></div>
+                  <div>2022</div>
+                </div>
+              </div>
+              <div class="attraction-caption">
+                <div class="article-title">Tour Eiffel</div>
+                <div class="note">
+                  <span class="stars"
+                    ><i class="icon-bubble_rating_full"></i
+                    ><i class="icon-bubble_rating_full"></i
+                    ><i class="icon-bubble_rating_full"></i
+                    ><i class="icon-bubble_rating_half"></i
+                    ><i class="icon-bubble_rating_empty"></i>
+                  </span>
+                  <span class="voters">123 456</span>
+                </div>
+                <p class="description">
+                  Tours et plateformes d'observation, Monuments & Points
+                  d'intérêt
+                </p>
+              </div>
+            </div>
+            <div class="diapo">
+              <div class="image">
+                <img src="./assets/img/marche-vernaison-maison.jpg" alt="" />
+                <div class="like-button">
+                  <i class="icon-heart"></i>
+                </div>
+                <div class="travelers-choice">
+                  <div><i class="icon-travelers_choice_badge"></i></div>
+                  <div>2022</div>
+                </div>
+              </div>
+              <div class="attraction-caption">
+                <div class="article-title">Marché aux Puces de Saint-Ouen</div>
+                <div class="note">
+                  <span class="stars"
+                    ><i class="icon-bubble_rating_full"></i
+                    ><i class="icon-bubble_rating_full"></i
+                    ><i class="icon-bubble_rating_full"></i
+                    ><i class="icon-bubble_rating_half"></i
+                    ><i class="icon-bubble_rating_empty"></i>
+                  </span>
+                  <span class="voters">123 456</span>
+                </div>
+                <p class="description">
+                  Antiquaires, Marchés aux puces & Marchés de rue<br />
+                  Saint-Ouen,<br />
+                  France À 5,4 kilomètres de Paris
+                </p>
+              </div>
+            </div>
+            <div class="diapo">
+              <div class="image">
+                <img src="./assets/img/eiffeltoren.jpg" alt="" />
+                <div class="like-button">
+                  <i class="icon-heart"></i>
+                </div>
+                <div class="travelers-choice">
+                  <div><i class="icon-travelers_choice_badge"></i></div>
+                  <div>2022</div>
+                </div>
+              </div>
+              <div class="attraction-caption">
+                <div class="article-title">Tour Eiffel</div>
+                <div class="note">
+                  <span class="stars"
+                    ><i class="icon-bubble_rating_full"></i
+                    ><i class="icon-bubble_rating_full"></i
+                    ><i class="icon-bubble_rating_full"></i
+                    ><i class="icon-bubble_rating_half"></i
+                    ><i class="icon-bubble_rating_empty"></i>
+                  </span>
+                  <span class="voters">123 456</span>
+                </div>
+                <p class="description">
+                  Tours et plateformes d'observation, Monuments & Points
+                  d'intérêt
+                </p>
+              </div>
+            </div>
+            <div class="diapo">
+              <div class="image">
+                <img src="./assets/img/marche-vernaison-maison.jpg" alt="" />
+                <div class="like-button">
+                  <i class="icon-heart"></i>
+                </div>
+                <div class="travelers-choice">
+                  <div><i class="icon-travelers_choice_badge"></i></div>
+                  <div>2022</div>
+                </div>
+              </div>
+              <div class="attraction-caption">
+                <div class="article-title">Marché aux Puces de Saint-Ouen</div>
+                <div class="note">
+                  <span class="stars"
+                    ><i class="icon-bubble_rating_full"></i
+                    ><i class="icon-bubble_rating_full"></i
+                    ><i class="icon-bubble_rating_full"></i
+                    ><i class="icon-bubble_rating_half"></i
+                    ><i class="icon-bubble_rating_empty"></i>
+                  </span>
+                  <span class="voters">123 456</span>
+                </div>
+                <p class="description">
+                  Antiquaires, Marchés aux puces & Marchés de rue<br />
+                  Saint-Ouen,<br />
+                  France À 5,4 kilomètres de Paris
+                </p>
+              </div>
+            </div>
+          </div>
+        </div>
+
+        <div class="activities">
+          <div class="activities-col-1">
+            <h3>Se restaurer</h3>
+            <p>Bistrots et bars typiques, et plus encore à Paris.</p>
+            <p><a>Tout afficher</a></p>
+          </div>
+          <div class="carroussel">
+            <div class="diapo">
+              <div class="image">
+                <img src="./assets/img/eiffeltoren.jpg" alt="" />
+                <div class="like-button">
+                  <i class="icon-heart"></i>
+                </div>
+                <div class="travelers-choice">
+                  <div><i class="icon-travelers_choice_badge"></i></div>
+                  <div>2022</div>
+                </div>
+              </div>
+              <div class="attraction-caption">
+                <div class="article-title">Tour Eiffel</div>
+                <div class="note">
+                  <span class="stars"
+                    ><i class="icon-bubble_rating_full"></i
+                    ><i class="icon-bubble_rating_full"></i
+                    ><i class="icon-bubble_rating_full"></i
+                    ><i class="icon-bubble_rating_half"></i
+                    ><i class="icon-bubble_rating_empty"></i>
+                  </span>
+                  <span class="voters">123 456</span>
+                </div>
+                <p class="description">
+                  Tours et plateformes d'observation, Monuments & Points
+                  d'intérêt
+                </p>
+              </div>
+            </div>
+            <div class="diapo">
+              <div class="image">
+                <img src="./assets/img/marche-vernaison-maison.jpg" alt="" />
+                <div class="like-button">
+                  <i class="icon-heart"></i>
+                </div>
+                <div class="travelers-choice">
+                  <div><i class="icon-travelers_choice_badge"></i></div>
+                  <div>2022</div>
+                </div>
+              </div>
+              <div class="attraction-caption">
+                <div class="article-title">Marché aux Puces de Saint-Ouen</div>
+                <div class="note">
+                  <span class="stars"
+                    ><i class="icon-bubble_rating_full"></i
+                    ><i class="icon-bubble_rating_full"></i
+                    ><i class="icon-bubble_rating_full"></i
+                    ><i class="icon-bubble_rating_half"></i
+                    ><i class="icon-bubble_rating_empty"></i>
+                  </span>
+                  <span class="voters">123 456</span>
+                </div>
+                <p class="description">
+                  Antiquaires, Marchés aux puces & Marchés de rue<br />
+                  Saint-Ouen,<br />
+                  France À 5,4 kilomètres de Paris
+                </p>
+              </div>
+            </div>
+            <div class="diapo">
+              <div class="image">
+                <img src="./assets/img/eiffeltoren.jpg" alt="" />
+                <div class="like-button">
+                  <i class="icon-heart"></i>
+                </div>
+                <div class="travelers-choice">
+                  <div><i class="icon-travelers_choice_badge"></i></div>
+                  <div>2022</div>
+                </div>
+              </div>
+              <div class="attraction-caption">
+                <div class="article-title">Tour Eiffel</div>
+                <div class="note">
+                  <span class="stars"
+                    ><i class="icon-bubble_rating_full"></i
+                    ><i class="icon-bubble_rating_full"></i
+                    ><i class="icon-bubble_rating_full"></i
+                    ><i class="icon-bubble_rating_half"></i
+                    ><i class="icon-bubble_rating_empty"></i>
+                  </span>
+                  <span class="voters">123 456</span>
+                </div>
+                <p class="description">
+                  Tours et plateformes d'observation, Monuments & Points
+                  d'intérêt
+                </p>
+              </div>
+            </div>
+            <div class="diapo">
+              <div class="image">
+                <img src="./assets/img/marche-vernaison-maison.jpg" alt="" />
+                <div class="like-button">
+                  <i class="icon-heart"></i>
+                </div>
+                <div class="travelers-choice">
+                  <div><i class="icon-travelers_choice_badge"></i></div>
+                  <div>2022</div>
+                </div>
+              </div>
+              <div class="attraction-caption">
+                <div class="article-title">Marché aux Puces de Saint-Ouen</div>
+                <div class="note">
+                  <span class="stars"
+                    ><i class="icon-bubble_rating_full"></i
+                    ><i class="icon-bubble_rating_full"></i
+                    ><i class="icon-bubble_rating_full"></i
+                    ><i class="icon-bubble_rating_half"></i
+                    ><i class="icon-bubble_rating_empty"></i>
+                  </span>
+                  <span class="voters">123 456</span>
+                </div>
+                <p class="description">
+                  Antiquaires, Marchés aux puces & Marchés de rue<br />
+                  Saint-Ouen,<br />
+                  France À 5,4 kilomètres de Paris
+                </p>
+              </div>
+            </div>
+          </div>
+        </div>
+      </section>
+
+      <section class="guides">
+        <h2>Guides de voyageurs</h2>
+        <div class="carroussel">
+          <div class="diapo">
+            <div class="image">
+              <img src="./assets/img/visit3.jpg" alt="" />
+            </div>
+            <div class="attraction-caption">
+              <div class="article-title">
+                Top 10 des choses à faire ou à voir dans le 14ème
+              </div>
+              <p class="description">10 articles</p>
+              <div class="author">
+                <div class="avatar">
+                  <img src="./assets/img/topito-com.jpg" alt="" />
+                </div>
+                Par<span class="author-name">Topito</span>
+              </div>
+            </div>
+          </div>
+
+          <div class="diapo">
+            <div class="image">
+              <img src="./assets/img/visit3.jpg" alt="" />
+            </div>
+            <div class="attraction-caption">
+              <div class="article-title">
+                Top 10 des choses à faire ou à voir dans le 14ème
+              </div>
+              <p class="description">10 articles</p>
+              <div class="author">
+                <div class="avatar">
+                  <img src="./assets/img/topito-com.jpg" alt="" />
+                </div>
+                Par<span class="author-name">Topito</span>
+              </div>
+            </div>
+          </div>
+
+          <div class="diapo">
+            <div class="image">
+              <img src="./assets/img/visit3.jpg" alt="" />
+            </div>
+            <div class="attraction-caption">
+              <div class="article-title">
+                Top 10 des choses à faire ou à voir dans le 14ème
+              </div>
+              <p class="description">10 articles</p>
+              <div class="author">
+                <div class="avatar">
+                  <img src="./assets/img/topito-com.jpg" alt="" />
+                </div>
+                Par<span class="author-name">Topito</span>
+              </div>
+            </div>
+          </div>
+        </div>
+      </section>
     </main>
-    <footer class="bd-black container">FOOTER</footer>
+    <footer class="container">
+      <div>
+        <img
+          class="favicon"
+          src="./assets/img/favicon-tripadvisor.svg"
+          alt=""
+        />
+      </div>
+      <p>
+        Made at
+        <a href="https://www.lereacteur.io/" target="blank" class="boldy"
+          >Le Reacteur</a
+        >
+        by
+        <a class="boldy">Fernand Morrison</a>
+      </p>
+    </footer>
   </body>
 </html>
