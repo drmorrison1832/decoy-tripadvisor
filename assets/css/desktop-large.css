@@ -131,20 +131,9 @@ nav.navigation-bar {
 
 /* ———————————— SECTTION TOP ———————————— */
 
-/* h1 {
-  font-size: 28px;
-  font-family: var(--trip-med);
-  font-weight: 900;
-  line-height: 38px;
-  letter-spacing: 0.6px;
-} */
-
 section.top {
-  /* background: green; */
   display: flex;
   flex-direction: column;
-  /* justify-content: space-between; */
-  /* gap: 10px; */
   margin-top: 30px;
 }
 
@@ -173,18 +162,25 @@ span.explorez {
 }
 
 .services {
+  width: 100%;
   display: flex;
   gap: 10px;
 }
 
 div.services .service-button {
   border: 1px solid black;
+  /* La ligne suivante me paraît correcte, mais dans les faits elle ne change rien au layout. */
+  width: calc(100% - 10px);
+  line-height: 20px;
   border-radius: 16px;
-  /* height: 40px; */
   flex: 1;
   display: flex;
   justify-content: space-between;
   padding: 12px;
+}
+
+div.services .desktop-l-hide {
+  display: none;
 }
 
 div.service-text {
@@ -320,7 +316,7 @@ section.abstract {
 }
 
 .abstract p {
-  font-family: Georgia, "Times New Roman", Times, serif;
+  font-family: var(--georgia);
   font-size: 20px;
   line-height: 24px;
   color: #333;
@@ -374,10 +370,6 @@ div.mini-map {
 section.highlights {
   margin-top: 80px;
   margin-bottom: 40px;
-}
-
-.highlights h2 {
-  /* margin-bottom: 30px; */
 }
 
 div.activities {
@@ -510,9 +502,6 @@ span.voters {
   letter-spacing: 2px;
 }
 
-div.diapo .voters {
-}
-
 div.diapo .description {
   font-family: var(--trip-reg);
   font-size: 14px;
@@ -533,10 +522,6 @@ section.guides .carroussel {
 section.guides .diapo {
   width: calc((100% - 40px) / 3);
   gap: 12px;
-}
-
-section.guides .article-title {
-  /* margin-top: 10px; */
 }
 
 section.guides .carroussel .image > img {
@@ -587,3 +572,5 @@ footer .favicon {
 footer a {
   text-decoration: none;
 }
+
+/* ———————————— SHOW ONLY ON SMALLER ———————————— */
