@@ -1,9 +1,8 @@
 @import "reset.css";
 
-body,
-button {
+body {
   font-size: 20px;
-  font-family: TS-Reg, sans-serif;
+  font-family: var(--trip-reg);
 }
 
 /* STRUCTURE */
@@ -27,7 +26,7 @@ main {
 }
 
 footer {
-  font: 14px TS-Med;
+  font: 14px var(--trip-med);
   background-color: #faf1ed;
   height: 150px;
   margin-top: 140px;
@@ -40,21 +39,20 @@ footer {
 /* ———————————— COMMON ELEMENTS ———————————— */
 
 h1 {
-  font: 900 54px "TS-Med";
-  letter-spacing: 0.5px;
+  font: 900 54px var(--trip-med);
+  letter-spacing: 0.25px;
   margin-bottom: 8px;
 }
 
 h2 {
-  font: 900 28px "TS-Med";
+  font: 900 28px var(--trip-med);
   line-height: 38px;
-  letter-spacing: 0px;
-  word-spacing: 0px;
+  letter-spacing: 0.25px;
   margin-bottom: 30px;
 }
 
 h3 {
-  font-family: TS-med;
+  font-family: var(--trip-med);
   font-size: 24px;
   margin-bottom: 20px;
 }
@@ -75,9 +73,9 @@ h3 {
 nav.navigation-bar {
   display: flex;
   align-items: center;
-  font-family: "TS-Reg";
+  font-family: var(--trip-Reg);
   font-size: 16px;
-  font-weight: bold;
+  font-weight: 700;
   display: flex;
   /* width: 50%; */
   gap: 10px;
@@ -103,7 +101,8 @@ nav.navigation-bar {
 }
 
 .connection-button {
-  font-family: "TS-Reg";
+  font-family: var(--trip-med);
+  font-weight: 400;
   display: flex;
   justify-content: center;
   align-items: center;
@@ -134,7 +133,7 @@ nav.navigation-bar {
 
 /* h1 {
   font-size: 28px;
-  font-family: "TS-Med";
+  font-family: var(--trip-med);
   font-weight: 900;
   line-height: 38px;
   letter-spacing: 0.6px;
@@ -189,7 +188,7 @@ div.services .service-button {
 }
 
 div.service-text {
-  font-family: "TS-Med";
+  font-family: var(--trip-med);
   text-align: left;
   font-size: 16px;
   line-height: 20px;
@@ -254,7 +253,7 @@ div.gallery img:hover {
 div.gallery div.all-photos {
   position: absolute;
   bottom: 0;
-  font-family: TS-med;
+  font-family: var(--trip-med);
   font-size: 12px;
   line-height: 20px;
   color: #ffffff;
@@ -334,13 +333,13 @@ div.organize {
 }
 
 div.organize > p:first-child {
-  font-family: TS-Med;
+  font-family: var(--trip-med);
   font-size: 32px;
   line-height: 40px;
 }
 
 div.organize > p:nth-child(2) {
-  font-family: TS-Med;
+  font-family: var(--trip-med);
   font-size: 16px;
   line-height: 20px;
   margin-top: 15px;
@@ -348,7 +347,7 @@ div.organize > p:nth-child(2) {
 }
 
 div.organize button {
-  font-family: TS-med;
+  font-family: var(--trip-med);
   font-size: 16px;
   line-height: 30px;
   color: white;
@@ -400,7 +399,7 @@ div.activities {
 }
 
 .activities-col-1 a {
-  font-family: TS-med;
+  font-family: var(--trip-med);
   text-decoration: underline;
   font-size: 16px;
   cursor: pointer;
@@ -467,7 +466,7 @@ div.diapo .travelers-choice {
 
 .travelers-choice div {
   color: #323333;
-  font-family: TS-med;
+  font-family: var(--trip-med);
   font-weight: 700;
   font-size: 10px;
   line-height: 14px;
@@ -488,7 +487,7 @@ div.diapo .travelers-choice {
 }
 
 div.diapo .article-title {
-  font-family: TS-med;
+  font-family: var(--trip-med);
   font-size: 18px;
   /* margin: 7px 0 6px 0; */
 }
@@ -515,7 +514,7 @@ div.diapo .voters {
 }
 
 div.diapo .description {
-  font-family: TS-reg;
+  font-family: var(--trip-reg);
   font-size: 14px;
   line-height: 16.8px;
   /* margin-top: 5px; */
@@ -570,14 +569,15 @@ section.guides .attraction-caption {
 }
 
 span.author-name {
-  font-family: TS-Med;
+  font-family: var(--trip-med);
   margin-left: 5px;
 }
 
 /* ———————————— FOOTER ———————————— */
 
-footer .boldy {
-  font-weight: 900;
+.boldy {
+  font-family: var(--trip-med);
+  font-weight: bold;
 }
 
 footer .favicon {

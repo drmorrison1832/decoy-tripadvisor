@@ -1,6 +1,13 @@
 @import "reset.css";
 @import "desktop.css";
 
+:root {
+  --trip-reg: "TS-Reg", Arial, Helvetica, sans-serif;
+  --trip-med: "TS-Med", Arial, Helvetica, sans-serif;
+  --trip-vf-original: "Trip Sans VF", var(--trip-med);
+  --georgia: Georgia, "Times New Roman", Times, serif;
+}
+
 /* Small devices (landscape phones, 576px and up) */
 /* @media (min-width: 576px) { */
 /* Rules */

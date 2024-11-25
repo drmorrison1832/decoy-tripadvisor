@@ -34,11 +34,6 @@ p,
 blockquote,
 pre,
 a,
-a:link,
-a:visited,
-a:hover,
-a:active,
-a:target,
 abbr,
 acronym,
 address,
@@ -128,6 +123,7 @@ section {
 }
 body {
   line-height: 1.5;
+  -webkit-font-smoothing: antialiased;
 }
 ol,
 ul {
