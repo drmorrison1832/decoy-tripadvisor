@@ -1,0 +1,589 @@
+@import "reset.css";
+
+body,
+button {
+  font-size: 20px;
+  font-family: TS-Reg, sans-serif;
+}
+
+/* STRUCTURE */
+
+header {
+  height: 60px;
+  padding: 10px 0;
+  background-color: white;
+  border-bottom: 1px solid lightgray;
+
+  position: sticky;
+  top: 0;
+  z-index: 1;
+
+  display: flex;
+  justify-content: space-between;
+}
+
+main {
+  margin-top: 28px;
+}
+
+footer {
+  font: 14px TS-Med;
+  background-color: #faf1ed;
+  height: 150px;
+  margin-top: 140px;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  gap: 10px;
+}
+
+/* ———————————— COMMON ELEMENTS ———————————— */
+
+h1 {
+  font: 900 54px "TS-Med";
+  letter-spacing: 0.5px;
+  margin-bottom: 8px;
+}
+
+h2 {
+  font: 900 28px "TS-Med";
+  line-height: 38px;
+  letter-spacing: 0px;
+  word-spacing: 0px;
+  margin-bottom: 30px;
+}
+
+h3 {
+  font-family: TS-med;
+  font-size: 24px;
+  margin-bottom: 20px;
+}
+
+/* ———————————— COMMON CLASSES ———————————— */
+.container {
+  width: 1096px;
+  margin-left: auto;
+  margin-right: auto;
+}
+
+/* ———————————— HEADER ———————————— */
+
+.logo img {
+  width: 190px;
+}
+
+nav.navigation-bar {
+  display: flex;
+  align-items: center;
+  font-family: "TS-Reg";
+  font-size: 16px;
+  font-weight: bold;
+  display: flex;
+  /* width: 50%; */
+  gap: 10px;
+}
+
+.nav-button i {
+  font-size: 24px;
+}
+
+.nav-button {
+  display: flex;
+  justify-content: space-evenly;
+  align-items: center;
+  padding: 8px 10px;
+  border-radius: 30px;
+  gap: 5px;
+  align-self: stretch;
+  /* border: 1px solid black; */
+}
+.nav-button:hover {
+  background-color: #f2f2f2;
+  cursor: pointer;
+}
+
+.connection-button {
+  font-family: "TS-Reg";
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  padding: 8px 16px;
+  border-radius: 20px;
+  height: 40px;
+  color: white;
+  background-color: black;
+  text-wrap: nowrap;
+}
+
+.connection-button:hover {
+  background-color: #4c4c4c;
+  cursor: pointer;
+}
+
+.connection-button button {
+  font: inherit;
+  color: inherit;
+  background-color: inherit;
+  border: 0px;
+  cursor: inherit;
+}
+
+/* ———————————— BODY ———————————— */
+
+/* ———————————— SECTTION TOP ———————————— */
+
+/* h1 {
+  font-size: 28px;
+  font-family: "TS-Med";
+  font-weight: 900;
+  line-height: 38px;
+  letter-spacing: 0.6px;
+} */
+
+section.top {
+  /* background: green; */
+  display: flex;
+  flex-direction: column;
+  /* justify-content: space-between; */
+  /* gap: 10px; */
+  margin-top: 30px;
+}
+
+p.disclaimer {
+  font-size: 14px;
+  line-height: 16px;
+  margin-bottom: 30px;
+}
+
+.disclaimer a {
+  text-decoration: underline;
+  cursor: pointer;
+}
+
+/* GROUPER TOUT CE QUI EST LINK SOUS <A> */
+
+.top a:link,
+a:visited,
+a:hover,
+a:active {
+  color: #000000;
+}
+
+span.explorez {
+  color: #ff5d5d;
+}
+
+.services {
+  display: flex;
+  gap: 10px;
+}
+
+div.services .service-button {
+  border: 1px solid black;
+  border-radius: 16px;
+  /* height: 40px; */
+  flex: 1;
+  display: flex;
+  justify-content: space-between;
+  padding: 12px;
+}
+
+div.service-text {
+  font-family: "TS-Med";
+  text-align: left;
+  font-size: 16px;
+  line-height: 20px;
+}
+
+div.service-icon {
+  text-align: left;
+  font-size: 24px;
+}
+
+.service-button:hover {
+  background-color: black;
+  color: white;
+  cursor: pointer;
+}
+
+/* ———————————— SECTTION GALLERY ———————————— */
+
+div.gallery {
+  margin-top: 25px;
+  display: flex;
+  height: 430px;
+}
+
+.gallery-col-1 {
+  margin-right: 2px;
+  position: relative;
+}
+
+.gallery-col-2 {
+  width: 480px;
+  display: flex;
+  gap: 1px;
+  flex-direction: column;
+}
+
+.gallery-col-1 img {
+  object-fit: cover;
+  object-position: center;
+  width: 100%;
+  height: 100%;
+}
+
+.gallery-col-2 div {
+  flex: 1;
+  overflow: hidden;
+}
+
+.gallery-col-2 img {
+  object-fit: cover;
+  object-position: center;
+  height: 100%;
+  width: 100%;
+  /* height: calc(50% - 1px); */
+}
+
+div.gallery img:hover {
+  opacity: 0.8;
+  cursor: pointer;
+}
+
+div.gallery div.all-photos {
+  position: absolute;
+  bottom: 0;
+  font-family: TS-med;
+  font-size: 12px;
+  line-height: 20px;
+  color: #ffffff;
+  background-color: #000000;
+  padding: 8px;
+  border-radius: 30px;
+  display: flex;
+  gap: 8px;
+  margin: 15px;
+}
+
+div.all-photos i {
+  font-size: 16px;
+}
+
+div.gallery div.all-photos:hover {
+  background-color: #333;
+  cursor: pointer;
+}
+
+div.location > div {
+  font-size: 12px;
+  line-height: 1;
+  margin-top: 20px;
+  display: flex;
+  justify-content: space-between;
+  gap: 5px;
+}
+
+div.location span.link:hover {
+  text-decoration: underline;
+  cursor: pointer;
+}
+
+div.location span:not(:first-child) {
+  margin: 0 5px;
+}
+
+div.location i {
+  font-size: 12px;
+}
+
+div.location i.arrow-smaller {
+  vertical-align: 2px;
+  font-size: 12px;
+}
+
+/* ———————————— SECTION ABSTRACT ———————————— */
+section.abstract {
+  margin: 42px 60px 0 0;
+  display: flex;
+  justify-content: space-between;
+}
+
+.abstract div.abstract-col-1 {
+  width: 50%;
+}
+
+.abstract div.abstract-col-2 {
+  margin-left: 100px;
+  width: calc(50% - 100px);
+  display: flex;
+  flex-direction: column;
+}
+
+.abstract p {
+  font-family: Georgia, "Times New Roman", Times, serif;
+  font-size: 20px;
+  line-height: 24px;
+  color: #333;
+}
+
+div.organize {
+  padding: 32px 33px;
+  background-color: #ff5d5d;
+  border-radius: 16px 16px 0 0;
+}
+
+div.organize > p:first-child {
+  font-family: TS-Med;
+  font-size: 32px;
+  line-height: 40px;
+}
+
+div.organize > p:nth-child(2) {
+  font-family: TS-Med;
+  font-size: 16px;
+  line-height: 20px;
+  margin-top: 15px;
+  margin-bottom: 24px;
+}
+
+div.organize button {
+  font-family: TS-med;
+  font-size: 16px;
+  line-height: 30px;
+  color: white;
+  background-color: black;
+  border: 0;
+  border-radius: 14px;
+  padding: 12px;
+}
+
+div.organize button:hover {
+  background-color: #000000b2;
+}
+
+div.mini-map {
+  background-image: url(../img/image_trips_card_medium.png);
+  background-position: center;
+  background-size: cover;
+  height: 190px;
+  border-radius: 0 0 16px 16px;
+}
+
+/* ———————————— SECTION HIGHLIGHTS ————————————  */
+
+section.highlights {
+  margin-top: 80px;
+  margin-bottom: 40px;
+}
+
+.highlights h2 {
+  /* margin-bottom: 30px; */
+}
+
+div.activities {
+  display: flex;
+  /* height: 296px; */
+  margin-bottom: 40px;
+}
+
+.activities-col-1 {
+  flex: 1;
+  padding-right: 30px;
+}
+
+.activities-col-1 p {
+  font-family: Georgia, "Times New Roman", Times, serif;
+  font-size: 18px;
+  line-height: 22px;
+  margin-bottom: 20px;
+}
+
+.activities-col-1 a {
+  font-family: TS-med;
+  text-decoration: underline;
+  font-size: 16px;
+  cursor: pointer;
+}
+
+.carroussel {
+  flex: 3;
+  scrollbar-width: none;
+  display: flex;
+  overflow: scroll;
+  gap: 15px;
+}
+
+div.diapo {
+  flex-shrink: 0;
+  width: calc((100% - 30px) / 3);
+  position: relative;
+  display: flex;
+  gap: 8px;
+  flex-direction: column;
+  justify-content: flex-start;
+}
+
+div.diapo .image {
+  /* flex: 1.25; */
+  position: relative;
+}
+
+div.diapo img {
+  width: 100%;
+  height: 100%;
+  aspect-ratio: 27/20;
+  object-fit: cover;
+  object-position: center;
+}
+
+div.diapo:hover img {
+  opacity: 0.8;
+}
+
+div.diapo .travelers-choice {
+  position: absolute;
+  bottom: 8px;
+  left: 8px;
+  background: #35e1a1;
+  border-radius: 50% 50% 12% 12%;
+  padding: 0 3px 0 3px;
+  overflow: hidden;
+}
+
+.like-button {
+  font-size: 24px;
+  padding: 8px;
+  border-radius: 50%;
+  position: absolute;
+  top: 8px;
+  right: 8px;
+  background: white;
+}
+
+.like-button:hover {
+  background: #f2f2f2;
+}
+
+.travelers-choice div {
+  color: #323333;
+  font-family: TS-med;
+  font-weight: 700;
+  font-size: 10px;
+  line-height: 14px;
+  text-align: center;
+}
+
+.travelers-choice i {
+  font-size: 25px;
+}
+
+.attraction-caption {
+  /* flex: 0.75; */
+  display: flex;
+  flex-direction: column;
+  justify-content: flex-start;
+  /* margin-top: 7px; */
+  gap: 5px;
+}
+
+div.diapo .article-title {
+  font-family: TS-med;
+  font-size: 18px;
+  /* margin: 7px 0 6px 0; */
+}
+
+div.diapo:hover .article-title {
+  text-decoration: underline;
+}
+
+div.diapo .note {
+  font-size: 12px;
+  line-height: 20px;
+}
+span.voters {
+  margin-left: 5px;
+}
+
+.stars i {
+  color: #04aa6c;
+  font-size: 14px;
+  letter-spacing: 2px;
+}
+
+div.diapo .voters {
+}
+
+div.diapo .description {
+  font-family: TS-reg;
+  font-size: 14px;
+  line-height: 16.8px;
+  /* margin-top: 5px; */
+}
+
+/* ———————————— SECTION GUIDES ————————————  */
+
+section.guides {
+  margin-top: 120px;
+}
+
+section.guides .carroussel {
+  gap: 20px;
+}
+
+section.guides .diapo {
+  width: calc((100% - 40px) / 3);
+  gap: 12px;
+}
+
+section.guides .article-title {
+  /* margin-top: 10px; */
+}
+
+section.guides .carroussel .image > img {
+  aspect-ratio: 26/20;
+}
+
+section.guides .attraction-caption {
+  margin-top: 0;
+  gap: 8px;
+}
+
+.author {
+  font-size: 14px;
+  display: flex;
+  align-items: center;
+}
+.avatar {
+  height: 22px;
+  width: 22px;
+  object-fit: fill;
+  object-position: center;
+  border-radius: 50%;
+  overflow: hidden;
+  margin-right: 5px;
+}
+
+.avatar img {
+  height: 100%;
+  width: 100%;
+}
+
+span.author-name {
+  font-family: TS-Med;
+  margin-left: 5px;
+}
+
+/* ———————————— FOOTER ———————————— */
+
+footer .boldy {
+  font-weight: 900;
+}
+
+footer .favicon {
+  height: 40px;
+}
+
+footer a {
+  text-decoration: none;
+}
