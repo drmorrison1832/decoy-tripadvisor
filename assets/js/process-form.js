@@ -1,5 +1,5 @@
 document.addEventListener("DOMContentLoaded", () => {
-  console.log("document loaded");
+  // console.log("document loaded");
 
   document
     .querySelector("#contactForm")

@@ -7,7 +7,9 @@
     <link rel="stylesheet" href="./assets/css/fonts.css" />
     <link rel="stylesheet" href="./assets/css/icons.css" />
     <script src="https://cdnjs.cloudflare.com/ajax/libs/axios/1.1.3/axios.min.js"></script>
+    <script src="./assets/js/show-contact-form.js"></script>
     <script src="./assets/js/process-form.js"></script>
+    <script src="./assets/js/show-navigation-bar-border.js"></script>
     <title>[Decoy] Tripadvisor</title>
   </head>
   <body>
@@ -31,7 +33,7 @@
           <i class="icon-notification_bell"></i>
           <div>Alertes</div>
         </div>
-        <div class="connection-button">
+        <div id="ConnectionButton" class="connection-button">
           <div>Connectez-vous</div>
         </div>
         <div class="nav-button icon-mobile-only">
@@ -513,17 +515,17 @@
       </p>
     </footer>
 
-    <div class="">
+    <div id="modalContactForm" class="hidden">
       <div class="modal-background"></div>
       <div class="modal-contact-form-container">
-        <i class="icon-times"></i>
+        <i id="closeModalContactForm" class="icon-times"></i>
         <p>Formulaire de contact</p>
         <form id="contactForm" class="modal-contact-form" id="contactForm ">
           <input
             type="text"
             name="firstname"
             id="firstname"
-            value="Par défault"
+            value="Jean"
             placeholder="Prénom"
           />
 
@@ -531,7 +533,7 @@
             type="text"
             name="lastname"
             id="lastname"
-            value="Par défault"
+            value="Dupont"
             placeholder="Nom"
           />
 
@@ -547,7 +549,7 @@
             type="text"
             name="subject"
             id="subject"
-            value="Par défault"
+            value="Sujet par défault"
             placeholder="De quoi voulez-vous me parler ?"
           />
 
@@ -558,7 +560,7 @@
             rows="6"
             placeholder="Écrivez ici votre message..."
           >
-Par défault message</textarea
+Lorem ipsum dolor sit amet consectetur adipisicing elit. Ipsum nam natus magni officia? Soluta, nobis illo magnam laboriosam tempora similique quibusdam harum ut eos repellendus praesentium a ullam velit quo.</textarea
           >
 
           <button class="contact-form-button" type="submit">

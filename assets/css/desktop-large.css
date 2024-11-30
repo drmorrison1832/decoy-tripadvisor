@@ -467,3 +467,7 @@ div.location i.arrow-smaller {
 footer a {
   text-decoration: none;
 }
+
+.border-down {
+  border-bottom: 1px solid lightgray;
+}
