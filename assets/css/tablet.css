@@ -1,0 +1,72 @@
+.nav-button :nth-child(2) {
+  display: none;
+}
+
+.gallery {
+  height: 277px;
+}
+
+.gallery-col-1 {
+  flex: 2;
+}
+
+.gallery-col-2 {
+  flex: 1;
+}
+
+.abstract {
+  display: block;
+}
+
+.abstract-col-1 {
+  width: 100%;
+  margin-bottom: 65px;
+}
+
+.abstract-col-2 {
+  margin-left: 0;
+  flex-direction: row;
+  flex-basis: 100%;
+  /* align-items: stretch; */
+}
+
+.organize {
+  width: 50%;
+  border-radius: 16px 0px 0 16px;
+  flex-shrink: 0;
+}
+
+.mini-map {
+  flex-grow: 1;
+  min-height: 90%;
+  height: unset;
+  /* background: #000; */
+  /* flex-direction: column; */
+  /* flex-grow: 1; */
+  border-radius: 0 16px 16px 0;
+}
+
+/* .mini-map img {
+  border: 5px solid black;
+  object-fit: cover;
+  object-position: center;
+  height: 100%;
+  width: 100%;
+} */
+
+.carroussel {
+  margin-right: -20px;
+}
+
+.diapo {
+  width: calc((100% - 30px) / 2.5);
+}
+
+.guides .diapo {
+  width: calc((100% - 20px) / 2.5);
+  gap: 12px;
+}
+
+.guides .carroussel {
+  margin-right: auto;
+}

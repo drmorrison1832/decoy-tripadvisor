@@ -1,21 +1,25 @@
+.container {
+  max-width: 1096px;
+  width: calc(100% - 40px);
+}
+
 /* ———————————— SECTTION TOP ———————————— */
 
 .services {
   flex-wrap: wrap;
 }
 
-.service-button {
-  flex: 1;
+div.services .service-button {
   flex-basis: 20%;
 }
 
-.services .desktop-l-hide {
+div.services .desktop-l-hide {
   display: flex;
 }
 
 /* ———————————— SECTTION GALLERY ———————————— */
 
-.gallery {
+div.gallery {
   height: 380px;
 }
 
@@ -29,6 +33,6 @@
 
 /* ———————————— SECTION HIGHLIGHTS ————————————  */
 
-.diapo {
+div.diapo {
   width: calc((95% - 30px) / 3);
 }

@@ -1,28 +1,26 @@
 @import "reset.css";
 
 body {
+  width: 100%;
   font-size: 20px;
   font-family: var(--trip-reg);
 }
 
-/* STRUCTURE */
+/* ———————————— COMMON ELEMENTS ———————————— */
+
+main {
+  margin-top: 25px;
+}
 
 header {
   height: 60px;
-  padding: 10px 0;
+  /* padding: 100px 0; */
   background-color: white;
-  border-bottom: 1px solid lightgray;
-
+  /* width: 100%; */
   position: sticky;
   top: 0;
   z-index: 1;
-
   display: flex;
-  justify-content: space-between;
-}
-
-main {
-  margin-top: 28px;
 }
 
 footer {
@@ -36,12 +34,10 @@ footer {
   gap: 10px;
 }
 
-/* ———————————— COMMON ELEMENTS ———————————— */
-
 h1 {
   font: 900 54px var(--trip-med);
   letter-spacing: 0.25px;
-  margin-bottom: 8px;
+  margin-bottom: 15px;
 }
 
 h2 {
@@ -54,31 +50,52 @@ h2 {
 h3 {
   font-family: var(--trip-med);
   font-size: 24px;
+  line-height: 24px;
   margin-bottom: 20px;
+}
+
+a {
+  text-decoration: underline;
+  cursor: pointer;
+}
+
+a:link,
+a:visited,
+a:hover,
+a:active {
+  color: #000000;
 }
 
 /* ———————————— COMMON CLASSES ———————————— */
 .container {
-  width: 1096px;
+  max-width: 1135px;
   margin-left: auto;
   margin-right: auto;
+  padding: 0px 20px;
 }
 
 /* ———————————— HEADER ———————————— */
+
+.logo {
+  align-content: center;
+}
 
 .logo img {
   width: 190px;
 }
 
-nav.navigation-bar {
+.navigation-bar {
   display: flex;
   align-items: center;
   font-family: var(--trip-Reg);
   font-size: 16px;
   font-weight: 700;
   display: flex;
-  /* width: 50%; */
   gap: 10px;
+}
+
+header > div {
+  flex: 1;
 }
 
 .nav-button i {
@@ -86,32 +103,27 @@ nav.navigation-bar {
 }
 
 .nav-button {
-  display: flex;
   justify-content: space-evenly;
+  display: flex;
   align-items: center;
   padding: 8px 10px;
   border-radius: 30px;
   gap: 5px;
-  align-self: stretch;
-  /* border: 1px solid black; */
+  /* align-self: stretch; */
 }
+
 .nav-button:hover {
   background-color: #f2f2f2;
   cursor: pointer;
 }
 
 .connection-button {
-  font-family: var(--trip-med);
-  font-weight: 400;
   display: flex;
-  justify-content: center;
   align-items: center;
   padding: 8px 16px;
   border-radius: 20px;
   height: 40px;
-  color: white;
   background-color: black;
-  text-wrap: nowrap;
 }
 
 .connection-button:hover {
@@ -119,79 +131,70 @@ nav.navigation-bar {
   cursor: pointer;
 }
 
-.connection-button button {
+.connection-button div {
   font: inherit;
-  color: inherit;
+  color: white;
   background-color: inherit;
   border: 0px;
   cursor: inherit;
+  font-family: var(--trip-med);
+  font-weight: 400;
+}
+
+.icon-mobile-only {
+  display: none;
+}
+
+.collapsable-menu {
+  display: none;
 }
 
 /* ———————————— BODY ———————————— */
 
 /* ———————————— SECTTION TOP ———————————— */
 
-section.top {
+.top {
   display: flex;
   flex-direction: column;
-  margin-top: 30px;
 }
 
-p.disclaimer {
+.disclaimer {
   font-size: 14px;
   line-height: 16px;
   margin-bottom: 30px;
 }
 
-.disclaimer a {
-  text-decoration: underline;
-  cursor: pointer;
-}
-
-/* GROUPER TOUT CE QUI EST LINK SOUS <A> */
-
-.top a:link,
-a:visited,
-a:hover,
-a:active {
-  color: #000000;
-}
-
-span.explorez {
+.explorez {
   color: #ff5d5d;
 }
 
 .services {
-  width: 100%;
   display: flex;
   gap: 10px;
 }
 
-div.services .service-button {
+.service-button {
   border: 1px solid black;
-  /* La ligne suivante me paraît correcte, mais dans les faits elle ne change rien au layout. */
-  width: calc(100% - 10px);
   line-height: 20px;
   border-radius: 16px;
   flex: 1;
   display: flex;
+  gap: 10px;
   justify-content: space-between;
-  padding: 12px;
+  padding: 12px 15px;
 }
 
-div.services .desktop-l-hide {
+.desktop-l-hide {
   display: none;
 }
 
-div.service-text {
+.service-text {
   font-family: var(--trip-med);
-  text-align: left;
   font-size: 16px;
   line-height: 20px;
 }
 
-div.service-icon {
-  text-align: left;
+.service-icon {
   font-size: 24px;
 }
 
@@ -203,22 +206,24 @@ div.service-icon {
 
 /* ———————————— SECTTION GALLERY ———————————— */
 
-div.gallery {
+.gallery {
   margin-top: 25px;
   display: flex;
   height: 430px;
+  gap: 2px;
+  justify-content: space-between;
 }
 
 .gallery-col-1 {
-  margin-right: 2px;
   position: relative;
 }
 
 .gallery-col-2 {
   width: 480px;
   display: flex;
-  gap: 1px;
+  gap: 2px;
   flex-direction: column;
+  justify-content: space-between;
 }
 
 .gallery-col-1 img {
@@ -229,16 +234,16 @@ div.gallery {
 }
 
 .gallery-col-2 div {
-  flex: 1;
+  display: flex;
   overflow: hidden;
+  height: 50%;
 }
 
 .gallery-col-2 img {
   object-fit: cover;
   object-position: center;
-  height: 100%;
+  /* height: 100%; */
   width: 100%;
-  /* height: calc(50% - 1px); */
 }
 
 div.gallery img:hover {
@@ -298,43 +303,55 @@ div.location i.arrow-smaller {
 }
 
 /* ———————————— SECTION ABSTRACT ———————————— */
-section.abstract {
+.abstract {
+  width: 100%;
   margin: 42px 60px 0 0;
   display: flex;
   justify-content: space-between;
 }
 
-.abstract div.abstract-col-1 {
+.abstract-col-1 {
   width: 50%;
 }
 
-.abstract div.abstract-col-2 {
+.abstract-col-2 {
   margin-left: 100px;
-  width: calc(50% - 100px);
+  flex-basis: calc(50% - 100px);
   display: flex;
   flex-direction: column;
+  overflow: hidden;
+  /* padding-left: 0px; */
 }
 
 .abstract p {
   font-family: var(--georgia);
   font-size: 20px;
-  line-height: 24px;
+  line-height: 23px;
   color: #333;
 }
 
-div.organize {
+.organize {
   padding: 32px 33px;
   background-color: #ff5d5d;
   border-radius: 16px 16px 0 0;
 }
 
-div.organize > p:first-child {
+.mini-map {
+  background-image: url(../img/image_trips_card_medium.png);
+  background-size: 100.5%;
+  background-position: center;
+  height: 190px;
+  /* width: 100%; */
+  border-radius: 0 0 16px 16px;
+}
+
+.organize > p:first-child {
   font-family: var(--trip-med);
   font-size: 32px;
   line-height: 40px;
 }
 
-div.organize > p:nth-child(2) {
+.organize > p:nth-child(2) {
   font-family: var(--trip-med);
   font-size: 16px;
   line-height: 20px;
@@ -342,7 +359,7 @@ div.organize > p:nth-child(2) {
   margin-bottom: 24px;
 }
 
-div.organize button {
+.organize button {
   font-family: var(--trip-med);
   font-size: 16px;
   line-height: 30px;
@@ -350,32 +367,23 @@ div.organize button {
   background-color: black;
   border: 0;
   border-radius: 14px;
-  padding: 12px;
+  padding: 12px 16px;
 }
 
-div.organize button:hover {
+.organize button:hover {
   background-color: #000000b2;
-}
-
-div.mini-map {
-  background-image: url(../img/image_trips_card_medium.png);
-  background-position: center;
-  background-size: cover;
-  height: 190px;
-  border-radius: 0 0 16px 16px;
 }
 
 /* ———————————— SECTION HIGHLIGHTS ————————————  */
 
-section.highlights {
-  margin-top: 80px;
-  margin-bottom: 40px;
+.highlights {
+  margin-top: 85px;
+  /* margin-bottom: 40px; */
 }
 
-div.activities {
+.activities {
   display: flex;
-  /* height: 296px; */
-  margin-bottom: 40px;
+  margin-bottom: 45px;
 }
 
 .activities-col-1 {
@@ -384,7 +392,7 @@ div.activities {
 }
 
 .activities-col-1 p {
-  font-family: Georgia, "Times New Roman", Times, serif;
+  font-family: var(--georgia);
   font-size: 18px;
   line-height: 22px;
   margin-bottom: 20px;
@@ -392,143 +400,29 @@ div.activities {
 
 .activities-col-1 a {
   font-family: var(--trip-med);
-  text-decoration: underline;
   font-size: 16px;
-  cursor: pointer;
-}
-
-.carroussel {
-  flex: 3;
-  scrollbar-width: none;
-  display: flex;
-  overflow: scroll;
-  gap: 15px;
-}
-
-div.diapo {
-  flex-shrink: 0;
-  width: calc((100% - 30px) / 3);
-  position: relative;
-  display: flex;
-  gap: 8px;
-  flex-direction: column;
-  justify-content: flex-start;
-}
-
-div.diapo .image {
-  /* flex: 1.25; */
-  position: relative;
-}
-
-div.diapo img {
-  width: 100%;
-  height: 100%;
-  aspect-ratio: 27/20;
-  object-fit: cover;
-  object-position: center;
-}
-
-div.diapo:hover img {
-  opacity: 0.8;
-}
-
-div.diapo .travelers-choice {
-  position: absolute;
-  bottom: 8px;
-  left: 8px;
-  background: #35e1a1;
-  border-radius: 50% 50% 12% 12%;
-  padding: 0 3px 0 3px;
-  overflow: hidden;
-}
-
-.like-button {
-  font-size: 24px;
-  padding: 8px;
-  border-radius: 50%;
-  position: absolute;
-  top: 8px;
-  right: 8px;
-  background: white;
-}
-
-.like-button:hover {
-  background: #f2f2f2;
-}
-
-.travelers-choice div {
-  color: #323333;
-  font-family: var(--trip-med);
-  font-weight: 700;
-  font-size: 10px;
-  line-height: 14px;
-  text-align: center;
-}
-
-.travelers-choice i {
-  font-size: 25px;
-}
-
-.attraction-caption {
-  /* flex: 0.75; */
-  display: flex;
-  flex-direction: column;
-  justify-content: flex-start;
-  /* margin-top: 7px; */
-  gap: 5px;
-}
-
-div.diapo .article-title {
-  font-family: var(--trip-med);
-  font-size: 18px;
-  /* margin: 7px 0 6px 0; */
-}
-
-div.diapo:hover .article-title {
-  text-decoration: underline;
-}
-
-div.diapo .note {
-  font-size: 12px;
-  line-height: 20px;
-}
-span.voters {
-  margin-left: 5px;
-}
-
-.stars i {
-  color: #04aa6c;
-  font-size: 14px;
-  letter-spacing: 2px;
-}
-
-div.diapo .description {
-  font-family: var(--trip-reg);
-  font-size: 14px;
-  line-height: 16.8px;
-  /* margin-top: 5px; */
 }
 
 /* ———————————— SECTION GUIDES ————————————  */
 
-section.guides {
+.guides {
   margin-top: 120px;
 }
 
-section.guides .carroussel {
+.guides .carroussel {
   gap: 20px;
 }
 
-section.guides .diapo {
+.guides .diapo {
   width: calc((100% - 40px) / 3);
   gap: 12px;
 }
 
-section.guides .carroussel .image > img {
-  aspect-ratio: 26/20;
+.guides .carroussel .image > img {
+  aspect-ratio: 35/27;
 }
 
-section.guides .attraction-caption {
+.guides .attraction-caption {
   margin-top: 0;
   gap: 8px;
 }
@@ -553,7 +447,7 @@ section.guides .attraction-caption {
   width: 100%;
 }
 
-span.author-name {
+.author-name {
   font-family: var(--trip-med);
   margin-left: 5px;
 }
@@ -565,12 +459,10 @@ span.author-name {
   font-weight: bold;
 }
 
-footer .favicon {
+.favicon {
   height: 40px;
 }
 
 footer a {
   text-decoration: none;
 }
-
-/* ———————————— SHOW ONLY ON SMALLER ———————————— */

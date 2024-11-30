@@ -1,5 +1,7 @@
 @import "reset.css";
 @import "desktop-large.css";
+@import "contact-form.css";
+@import "carroussel.css";
 @import "desktop-narrow.css" screen and (max-width: 1184px);
 @import "tablet.css" screen and (max-width: 1024px);
 @import "phone.css" screen and (max-width: 768px);

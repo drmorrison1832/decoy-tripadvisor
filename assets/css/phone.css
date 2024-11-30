@@ -1,0 +1,138 @@
+.container {
+  width: 100%;
+}
+
+header {
+  display: flex;
+  justify-content: space-between;
+}
+
+/* main {margin-top: 20px} */
+
+.navigation-bar {
+  justify-content: space-between;
+  flex: none;
+  gap: 0px;
+}
+
+.logo {
+  flex: none;
+}
+
+.logo img {
+  display: flex;
+  width: 130px;
+  align-items: center;
+}
+
+.nav-button,
+.connection-button {
+  display: none;
+}
+
+.icon-collapsable_menu,
+.icon-mobile-and-tablet-only {
+  display: flex;
+  flex-grow: 0;
+  min-width: 50px;
+  height: 40px;
+  padding: 10px;
+  align-content: center;
+  align-self: center;
+}
+
+.collapsable-menu {
+  display: flex;
+  flex: none;
+}
+
+.location {
+  display: none;
+}
+
+.collapsable-menu:hover {
+  background: none;
+}
+
+h1 {
+  font-size: 32px;
+  margin-top: 0px;
+  margin-bottom: 20px;
+}
+
+.top {
+  margin-top: 10px;
+}
+
+.services {
+  margin-left: -20px;
+  margin-right: -20px;
+
+  overflow: scroll;
+  scrollbar-width: none;
+  flex-wrap: nowrap;
+}
+
+.services .service-button {
+  /* flex-wrap: nowrap; */
+  display: flex;
+  /* width: unset; */
+  flex-shrink: 1;
+  gap: 10px;
+}
+
+.service-text {
+  text-wrap: nowrap;
+}
+
+.gallery {
+  margin-left: -20px;
+  margin-right: -20px;
+}
+
+.abstract-col-1 > p {
+  font-size: 16px;
+  line-height: 20px;
+}
+
+.gallery-col-2 {
+  display: none;
+}
+
+.abstract-col-2 {
+  flex-direction: column;
+  border-radius: 16px;
+}
+
+.abstract-col-2 > div {
+  width: unset;
+  border-radius: 0;
+  align-self: stretch;
+  min-height: 190px;
+}
+
+.organize {
+  display: flex;
+  flex-direction: column;
+}
+
+.organize > button {
+  align-self: center;
+}
+
+.activities {
+  flex-direction: column;
+}
+
+.activities-col-1 {
+  margin-bottom: 20px;
+}
+
+.diapo {
+  width: calc(66% - 15px);
+}
+
+.guides .diapo {
+  width: calc((66% - 20px));
+  gap: 12px;
+}
