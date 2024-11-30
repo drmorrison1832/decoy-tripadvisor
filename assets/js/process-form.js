@@ -14,7 +14,7 @@ document.addEventListener("DOMContentLoaded", () => {
         message: document.querySelector("#message").value,
       };
 
-      const response = await axios.post("http://localhost:3000/form", data);
-      console.log(response);
+      const response = await axios.post("http://localhost:3000/form", formData);
+      console.log(response.data);
     });
 });
