@@ -41,7 +41,7 @@
 }
 
 .modal-contact-form-container:has(.icon-times:hover) {
-  opacity: 90%;
+  /* opacity: 90%; */
 }
 
 .modal-contact-form-container > p {
