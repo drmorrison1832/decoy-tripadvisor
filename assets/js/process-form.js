@@ -14,7 +14,9 @@ document.addEventListener("DOMContentLoaded", () => {
         message: document.querySelector("#message").value,
       };
 
-      const response = await axios.post("http://localhost:3000/form", formData);
-      console.log(response.data);
+      // const response = await axios.post("http://localhost:3000/form", formData);
+      // console.log(response.data);
+      console.log(formData);
+      window.alert("Le mail serait envoyé à ce moment.");
     });
 });

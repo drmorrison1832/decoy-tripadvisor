@@ -12,17 +12,6 @@ main {
   margin-top: 25px;
 }
 
-header {
-  height: 60px;
-  /* padding: 100px 0; */
-  background-color: white;
-  /* width: 100%; */
-  position: sticky;
-  top: 0;
-  z-index: 1;
-  display: flex;
-}
-
 footer {
   font: 14px var(--trip-med);
   background-color: #faf1ed;
@@ -76,6 +65,23 @@ a:active {
 
 /* ———————————— HEADER ———————————— */
 
+header {
+  height: 60px;
+  /* padding: 100px 0; */
+  background-color: white;
+  /* width: 100%; */
+  position: sticky;
+  top: 0;
+  z-index: 1;
+  display: flex;
+}
+
+header > .container {
+  display: flex;
+  justify-content: space-between;
+  flex: 1;
+}
+
 .logo {
   align-content: center;
 }
@@ -92,10 +98,6 @@ a:active {
   font-weight: 700;
   display: flex;
   gap: 10px;
-}
-
-header > div {
-  flex: 1;
 }
 
 .nav-button i {
@@ -141,7 +143,7 @@ header > div {
   font-weight: 400;
 }
 
-.icon-mobile-only {
+.mobile-only {
   display: none;
 }
 

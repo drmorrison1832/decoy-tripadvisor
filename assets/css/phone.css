@@ -1,13 +1,7 @@
-.container {
-  width: 100%;
-}
-
 header {
   display: flex;
   justify-content: space-between;
 }
-
-/* main {margin-top: 20px} */
 
 .navigation-bar {
   justify-content: space-between;
@@ -25,7 +19,7 @@ header {
   align-items: center;
 }
 
-.nav-button,
+.nav-button:not(.show-mobile),
 .connection-button {
   display: none;
 }
@@ -39,11 +33,23 @@ header {
   padding: 10px;
   align-content: center;
   align-self: center;
+  background: #000;
 }
 
-.collapsable-menu {
+.nav-button.mobile-only {
   display: flex;
-  flex: none;
+}
+
+/* .collapsable-menu {
+  padding-left: 0;
+} */
+
+.nav-button:first-child {
+  padding-left: 0;
+}
+
+.nav-button:last-child {
+  padding-right: 0;
 }
 
 .location {
